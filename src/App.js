@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import { ButtonGroup } from '@material-ui/core';
 import Button from "@material-ui/core/Button"
@@ -7,8 +7,11 @@ import Button from "@material-ui/core/Button"
 import Checkbox from "@material-ui/core/Checkbox"
 import FormControllabel from '@material-ui/core/FormControlLabel'
 import TextField from '@material-ui/core/TextField'
-import {makeStyles} from '@material-ui/core/styles'
-
+import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/styles'
+import { orange,purple } from '@material-ui/core/colors';
+import 'fontsource-roboto'; 
+import { Typography } from '@material-ui/core';
+import Container from '@material-ui/core/Container';
 
 function CheckBoxExample() { 
   const[checked, setChecked] = React.useState(true)
@@ -34,9 +37,31 @@ const useStyles = makeStyles ({
     border: 0, 
     color: 'white',
     padding: '0 30px'
+    
   }
+})
 
-
+const theme = createMuiTheme({
+  typography: {
+     h2: {
+       fontsize: 36, 
+       marginTop: 0,
+       marginBottom: 100,
+     },
+     body1: {
+       fontsize: 10, 
+       marginbottom: 20, 
+     }
+  },
+  
+  palette: {
+    primary: {
+      main: orange[500], 
+    },
+    secondary: {
+      main: purple[500]
+    }
+  }
 })
 function ButtonStyled() {
   const classes = useStyles(); 
@@ -45,10 +70,18 @@ function ButtonStyled() {
 
 function App() {
   return (
-
-
+    <ThemeProvider theme = {theme}>
+    <Container>
     <div className="App">
       <header className="App-header">
+        <Typography variant = "h2">
+          Welcome to MUI
+        </Typography>
+
+        <Typography variant = "body1">
+          this is body text 
+        </Typography>
+     
       <ButtonStyled/>
 
       <TextField 
@@ -77,10 +110,11 @@ function App() {
           Press Here 
         </Button>
         
-        <img src={logo} className="App-logo" alt="logo" />
         </ButtonGroup>
       </header>
     </div>
+    </Container>  
+    </ThemeProvider>
   );
 }
 
