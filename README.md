@@ -21,4 +21,6 @@ I learned alot more javascript, I have no experience in the language, so I felt 
 I think it would have been nicer to show a cohesive product, as of now I only have examples of what each component can do.
 I was not able to set up multiple pages, was getting an unknown error so I would like to explore that a bit more on my own. I also was not able to figure out how exactly to change the webpages background colors.
 
-Overall though I feel that material ui is really worth the learn as it can help in tidying up UI/UX in websites. 
+
+### Opinion
+Overall though I feel that material ui is really worth the learn as it can help in tidying up UI/UX in websites. And there really are a plethora of resources as it is well documented and there are so many people on youtube talking about the library and creating tutorials as well
