@@ -18,6 +18,14 @@ import AppBar  from '@material-ui/core/AppBar';
 import  Toolbar  from '@material-ui/core/Toolbar';
 import  IconButton  from '@material-ui/core/IconButton';
 import  MenuIcon  from '@material-ui/icons/Menu';
+import List from '@material-ui/core/List'
+import { ListItem } from '@material-ui/core';
+import { ListItemIcon } from '@material-ui/core';
+import { ListItemText } from '@material-ui/core';
+import { AddCircleOutlineOutlined } from '@material-ui/icons'
+
+
+
 
 
 function CheckBoxExample() { 
@@ -75,13 +83,20 @@ function ButtonStyled() {
   return <Button className = {classes.root}>Test Styled Button </Button>
 }
 
+
 function App() {
+  const menuItems =[
+      {
+        text: 'Made list ',
+        icon: <AddCircleOutlineOutlined color = " secondary" />
+      }
+  ]
   return (
     <ThemeProvider theme = {theme}>
       <Container maxWidth = "lg">
         <div className="App">
           <header className="App-header">
-            <AppBar color = "secondary" >
+            <AppBar color = "secondary" position = "sticky" >
               <div>
                 <Toolbar>
                   <IconButton>
@@ -90,7 +105,7 @@ function App() {
                   <Typography variant= "H6">
                     Tanvir's Interactive page 
                   </Typography>
-                  <Button>
+                  <Button href="https://www.youtube.com/watch?v=vyJU9efvUtQ&t=866s" variant = "contained" color = "primary">
                     Login
                   </Button>
                 </Toolbar>
@@ -107,8 +122,8 @@ function App() {
           <ButtonStyled/>
 
           <Grid container spacing = {10} justify = "center">
-            <Grid item> 
-              <Paper style = {{height: 75, width: 50, }}/>
+            <Grid item > 
+              <Paper>Contained</Paper>
             </Grid>
             <Grid item> 
               <Paper style = {{height: 75, width: 50, }}/>
@@ -120,6 +135,7 @@ function App() {
               <Paper style = {{height: 75, width: 50, }}/>
             </Grid>
           </Grid>
+         
           <TextField 
               variant = "outlined"
               color = "primary"
@@ -136,7 +152,33 @@ function App() {
               color = "secondary"
               type = "time"
             />
-            <CheckBoxExample />
+          <List>
+          {menuItems.map(item => (
+            <ListItem
+              key = {item.text}
+            >
+              <ListItemIcon> {item.icon}</ListItemIcon>
+              <ListItemText primary = {item.text}/>
+            </ListItem>
+          
+          ))}  
+          </List>
+
+          <List>
+            <ListItem>
+              <ListItemText primary = "First element of the list"/>
+            
+            </ListItem>
+            <ListItem>
+              <ListItemText primary = "second Element"/>
+            
+            </ListItem>
+          </List>
+
+
+
+
+          <CheckBoxExample />
             <ButtonGroup>
             <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant = "contained" color = "secondary"> 
               Press Here 
