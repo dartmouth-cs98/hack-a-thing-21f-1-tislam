@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Hack-A-Thing Material UI
+Tanvir Islam 
+### Credits
+initial tutorial: https://www.youtube.com/watch?v=vyJU9efvUtQ&t=866s
+More help from: https://www.youtube.com/c/TheNetNinja
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+### Description
+In this hack-a-thing I had attempted to learn react and more particularly learn material-ui which is a library that deals with all things relating to user interface. So as a result I had just messed around with the components, adding buttons, lists, appbars and toolbars, and creating textboxes 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### What I learned
+I learned alot more javascript, I have no experience in the language, so I felt this was a nice introduction to webdevelopment and hopefully if time permits I would love to expand on what I am learning and take my material UI skills to another level for future Hack-A-Things. Therefore specifically I have learned how to make rudimentary styles, add textboxes and buttons, make lists, use typography, and use grids. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### What didnt work/shortcomings
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I think it would have been nicer to show a cohesive product, as of now I only have examples of what each component can do.
+I was not able to set up multiple pages, was getting an unknown error so I would like to explore that a bit more on my own. I also was not able to figure out how exactly to change the webpages background colors.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall though I feel that material ui is really worth the learn as it can help in tidying up UI/UX in websites. 

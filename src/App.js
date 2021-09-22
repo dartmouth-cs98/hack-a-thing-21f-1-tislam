@@ -28,6 +28,7 @@ import { AddCircleOutlineOutlined } from '@material-ui/icons'
 
 
 
+
 function CheckBoxExample() { 
   const[checked, setChecked] = React.useState(true)
   return (
@@ -73,8 +74,12 @@ const theme = createMuiTheme({
     primary: {
       main: orange[500], 
     },
+    
     secondary: {
       main: purple[500]
+    },
+    background: {
+      default: "#222222"
     }
   }
 })
@@ -112,11 +117,11 @@ function App() {
               </div>
             </AppBar>
             <Typography variant = "h2">
-              Welcome to MUI
+              Barebones of Material UI
             </Typography>
 
             <Typography variant = "body1">
-              this is body text 
+              Usage of typography for the body text 
             </Typography>
 
           <ButtonStyled/>
@@ -180,7 +185,7 @@ function App() {
 
           <CheckBoxExample />
             <ButtonGroup>
-            <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant = "contained" color = "secondary"> 
+            <Button href="https://www.youtube.com/watch?v=-UftRfo3WZE" variant = "contained" color = "secondary"> 
               Press Here 
             </Button>
 
