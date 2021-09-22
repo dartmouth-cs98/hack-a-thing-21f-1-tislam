@@ -1,7 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { ButtonGroup } from '@material-ui/core';
+import { ButtonGroup, Container } from '@material-ui/core';
 import Button from "@material-ui/core/Button"
 //import SaveIcon from "@material-ui/icons/Save"
 import Checkbox from "@material-ui/core/Checkbox"
@@ -11,7 +11,14 @@ import {makeStyles, ThemeProvider, createMuiTheme} from '@material-ui/core/style
 import { orange,purple } from '@material-ui/core/colors';
 import 'fontsource-roboto'; 
 import { Typography } from '@material-ui/core';
-import Container from '@material-ui/core/Container';
+//import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper'
+import Grid from '@material-ui/core/Grid'
+//import { AppBar } from '@material-ui/core';
+//import { Toolbar } from '@material-ui/core';
+//import { IconButton } from '@material-ui/core';
+//import { MenuIcon } from '@material-ui/core';
+
 
 function CheckBoxExample() { 
   const[checked, setChecked] = React.useState(true)
@@ -71,7 +78,7 @@ function ButtonStyled() {
 function App() {
   return (
     <ThemeProvider theme = {theme}>
-    <Container>
+    <Container maxWidth = "lg">
     <div className="App">
       <header className="App-header">
         <Typography variant = "h2">
@@ -84,6 +91,20 @@ function App() {
      
       <ButtonStyled/>
 
+      <Grid container spacing = {10} justify = "center">
+        <Grid item> 
+          <Paper style = {{height: 75, width: 50, }}/>
+        </Grid>
+        <Grid item> 
+          <Paper style = {{height: 75, width: 50, }}/>
+        </Grid>
+        <Grid item> 
+          <Paper style = {{height: 75, width: 50, }}/>
+        </Grid>
+        <Grid item> 
+          <Paper style = {{height: 75, width: 50, }}/>
+        </Grid>
+      </Grid>
       <TextField 
           variant = "outlined"
           color = "primary"
@@ -113,7 +134,7 @@ function App() {
         </ButtonGroup>
       </header>
     </div>
-    </Container>  
+    </Container>
     </ThemeProvider>
   );
 }
