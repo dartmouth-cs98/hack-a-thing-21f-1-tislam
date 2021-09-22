@@ -14,10 +14,10 @@ import { Typography } from '@material-ui/core';
 //import Container from '@material-ui/core/Container';
 import Paper from '@material-ui/core/Paper'
 import Grid from '@material-ui/core/Grid'
-//import { AppBar } from '@material-ui/core';
-//import { Toolbar } from '@material-ui/core';
-//import { IconButton } from '@material-ui/core';
-//import { MenuIcon } from '@material-ui/core';
+import AppBar  from '@material-ui/core/AppBar';
+import  Toolbar  from '@material-ui/core/Toolbar';
+import  IconButton  from '@material-ui/core/IconButton';
+import  MenuIcon  from '@material-ui/icons/Menu';
 
 
 function CheckBoxExample() { 
@@ -78,63 +78,78 @@ function ButtonStyled() {
 function App() {
   return (
     <ThemeProvider theme = {theme}>
-    <Container maxWidth = "lg">
-    <div className="App">
-      <header className="App-header">
-        <Typography variant = "h2">
-          Welcome to MUI
-        </Typography>
+      <Container maxWidth = "lg">
+        <div className="App">
+          <header className="App-header">
+            <AppBar color = "secondary" >
+              <div>
+                <Toolbar>
+                  <IconButton>
+                    <MenuIcon/> 
+                  </IconButton>
+                  <Typography variant= "H6">
+                    Tanvir's Interactive page 
+                  </Typography>
+                  <Button>
+                    Login
+                  </Button>
+                </Toolbar>
+              </div>
+            </AppBar>
+            <Typography variant = "h2">
+              Welcome to MUI
+            </Typography>
 
-        <Typography variant = "body1">
-          this is body text 
-        </Typography>
-     
-      <ButtonStyled/>
+            <Typography variant = "body1">
+              this is body text 
+            </Typography>
 
-      <Grid container spacing = {10} justify = "center">
-        <Grid item> 
-          <Paper style = {{height: 75, width: 50, }}/>
-        </Grid>
-        <Grid item> 
-          <Paper style = {{height: 75, width: 50, }}/>
-        </Grid>
-        <Grid item> 
-          <Paper style = {{height: 75, width: 50, }}/>
-        </Grid>
-        <Grid item> 
-          <Paper style = {{height: 75, width: 50, }}/>
-        </Grid>
-      </Grid>
-      <TextField 
-          variant = "outlined"
-          color = "primary"
-          placeholder= "Name"
-        />
-        <TextField 
-          variant = "outlined"
-          color = "secondary"
-          type = "date"
-          placeholder = "Date of birth "
-        />
-        <TextField 
-          variant = "outlined"
-          color = "secondary"
-          type = "time"
-        />
-        <CheckBoxExample />
-        <ButtonGroup>
-        <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant = "contained" color = "secondary"> 
-          Press Here 
-        </Button>
+          <ButtonStyled/>
 
-        <Button onClick= {()=>alert('Hello')} variant = "contained" color = "Primary"> 
-          Press Here 
-        </Button>
-        
-        </ButtonGroup>
-      </header>
-    </div>
-    </Container>
+          <Grid container spacing = {10} justify = "center">
+            <Grid item> 
+              <Paper style = {{height: 75, width: 50, }}/>
+            </Grid>
+            <Grid item> 
+              <Paper style = {{height: 75, width: 50, }}/>
+            </Grid>
+            <Grid item> 
+              <Paper style = {{height: 75, width: 50, }}/>
+            </Grid>
+            <Grid item> 
+              <Paper style = {{height: 75, width: 50, }}/>
+            </Grid>
+          </Grid>
+          <TextField 
+              variant = "outlined"
+              color = "primary"
+              placeholder= "Name"
+            />
+            <TextField 
+              variant = "outlined"
+              color = "secondary"
+              type = "date"
+              placeholder = "Date of birth "
+            />
+            <TextField 
+              variant = "outlined"
+              color = "secondary"
+              type = "time"
+            />
+            <CheckBoxExample />
+            <ButtonGroup>
+            <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant = "contained" color = "secondary"> 
+              Press Here 
+            </Button>
+
+            <Button onClick= {()=>alert('Hello')} variant = "contained" color = "Primary"> 
+              Press Here 
+            </Button>
+            
+            </ButtonGroup>
+          </header>
+        </div>
+      </Container>
     </ThemeProvider>
   );
 }
